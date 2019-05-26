@@ -1,0 +1,28 @@
+/* xs-sm */
+@define-mixin atSmall {
+	@media (min-width: 768px) {
+		@mixin-content;
+	}
+}
+
+/* sm-md */
+@define-mixin atMedium {
+	@media (min-width: 992px) {
+		@mixin-content;
+	}
+}
+
+/* md-lg */
+@define-mixin atLarge {
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
